@@ -1,2 +1,2 @@
 # Banking-System
-This is simple Banking system project written in python OOP.
+This is  a simple Banking system project written in python OOP.
