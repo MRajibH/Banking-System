@@ -4,9 +4,9 @@
 | Project Name : Banking Mangement System
 | Developed by : BroTecs Technologies Limited
 | created      : May 06, 2021 
-| updated      : May 09, 2021
+| updated      : May 09, 2021 [Md.Rajib Hawlader]
 |
-| For any query and suggestion please contact at info@brotecs.com
+| For any query and suggestion please contact at rajib104.ewubd@gmail.com
 |
 '''
 # user class used to store all the personal information of bank account holders and it used as a base class for Bank class
@@ -27,22 +27,22 @@ class user:
         print(f"              Name: {self.name}\n              Age : {self.age}\n              gender: {self.gender}\n\n")
 
 
-# Bank class used to provide all the functionality for account holders and it is derived class of ue=rer class
+# Bank class used to provide all the functionality for account holders and it is a derived class of Class User.
 class Bank (user):
     # Fuction acts as constructor
     # Input parameters: name -> String, age->Integer, gender->String
     # Return parameter: void
     # Additional Details:  N/A
     def __init__(self, name, age, gender):
-        #
+        # super() is used here to inherit the properties of base class(User) constructor.
         super().__init__(name, age, gender)
-        # This variable intiallize every account holders balance as zero by default
+        # This variable intiallize every account holders balance as zero by default and it is a private data members.
         self.__balance = 0
 
     # Function to deposit money to the bank
     # Input parameter: amount->Integer
     # Return parameter: void
-    # Additional detaila: N/A
+    # Additional detaila: depositMoney takes amount as parameter and add amount the balance
     def depositMoney(self,amount):
         self.amount = amount
         self.__balance  = self.amount + self.__balance
