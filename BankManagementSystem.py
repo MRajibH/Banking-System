@@ -1,5 +1,5 @@
 '''
-|BankManagement.py is a prototype banking system where user can create account, deposit and withdraw money, check balance and see their respective personal information.
+| BankManagement.py is a prototype banking system where users can create account, deposit and withdraw money from account, check balance and see their respective personal information.
 |
 | Project Name : Banking Mangement System
 | Developed by : BroTecs Technologies Limited
@@ -10,7 +10,7 @@
 |
 '''
 # user class used to store all the personal information of bank account holders and it used as a base class for Bank class
-class user:
+class User:
     # Fuction acts as constructor
     # Input parameters: name -> String, age->Integer, gender->String
     # Return parameter: void
@@ -28,7 +28,7 @@ class user:
 
 
 # Bank class used to provide all the functionality for account holders and it is a derived class of Class User.
-class Bank (user):
+class Bank (User):
     # Fuction acts as constructor
     # Input parameters: name -> String, age->Integer, gender->String
     # Return parameter: void
@@ -61,7 +61,7 @@ class Bank (user):
             print(f"Hi {self.name} Withdraw of ${self.amount} is successful. Current balance : ${self.__balance}\n\n") 
 
     # Function to check account holders balance
-    # Input parameter: void
+    # Input parameter: self
     # Return parameter: void
     # Additional detaila: N/A
     def checkBalance(self):
@@ -101,5 +101,5 @@ while(True):
         # Exit from the system
         break
     else: 
-        # Showing user the Error message for choosing wrong option from Menu
+        # Showing user the Error message for choosing wrong option from the menu
         print(f'Wrong choice {name} : please choose from the menu')
