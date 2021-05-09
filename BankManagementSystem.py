@@ -1,5 +1,5 @@
 '''
-| BankManagement.py is a prototype banking system where users can create account, deposit and withdraw money from account, check balance and see their respective personal information.
+| BankManagementSystem.py is a prototype banking system where users can create account, deposit and withdraw money from account, check balance and see their respective personal information.
 |
 | Project Name : Banking Mangement System
 | Developed by : BroTecs Technologies Limited
