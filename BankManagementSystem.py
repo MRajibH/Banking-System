@@ -42,7 +42,7 @@ class Bank (user):
     # Function to deposit money to the bank
     # Input parameter: amount->Integer
     # Return parameter: void
-    # Additional detaila: depositMoney takes amount as parameter and add amount the balance
+    # Additional detaila: depositMoney function takes amount as parameter and add that amount to the balance and shows a success message
     def depositMoney(self,amount):
         self.amount = amount
         self.__balance  = self.amount + self.__balance
@@ -51,7 +51,7 @@ class Bank (user):
     # Function to withdraw money from the bank
     # Input parameter: amount->Integer
     # Return parameter: void
-    # Additional detaila: N/A    
+    # Additional details: WithdrawMoney function takes amount as parameter and deduct the amount from the account holder balance and shows a success message  
     def withdrawMoney(self,amount):
         self.amount = amount
         if self.amount > self.__balance:
